@@ -37,22 +37,28 @@ Citation: https://linuxhint.com/sockaddr-in-structure-usage-c/
 
 ### QC.4
 The input parameters for socket() in order are:
-	int domain: Specifies communication domain
-	int type: Specifies communication semantics
-	int protocol: Specifies protocol value. Internet Protocol is 0.
+
+int domain: Specifies communication domain
+int type: Specifies communication semantics
+int protocol: Specifies protocol value. Internet Protocol is 0.
+
 The return value for socket() is an int which will return the file descriptor of a socket if successful, otherwise returns -1.
 Citation: https://man7.org/linux/man-pages/man2/socket.2.html
 
 ### QC.5
 The input parameters for bind() in order are:
-	int sockfd: The file descriptor referring to the socket
-	const struct sockaddr *addr: The address
-	socklen_t addrlen: size in bytes of the adress structure which addr points to.
+
+int sockfd: The file descriptor referring to the socket
+const struct sockaddr *addr: The address
+socklen_t addrlen: size in bytes of the adress structure which addr points to.
+
 Citation: https://man7.org/linux/man-pages/man2/bind.2.html
 	
 The input parameters for listen() in order are:
-	int sockfd: The file descriptor referring to the socket
-	int backlog: Maximum length of the queue of pending connections for sockfd.
+
+int sockfd: The file descriptor referring to the socket
+int backlog: Maximum length of the queue of pending connections for sockfd.
+
 Citation: https://man7.org/linux/man-pages/man2/listen.2.html
 
 ### QC.6
