@@ -11,18 +11,18 @@ Answer for Question 1:
 
 
 
-### QC.1:
+### QC.1
 
-	argc denotes the amount of command line inputs. *argv[] denotes a pointer to an array which contains the various command line inputs. This array will always be of size argc.
+Argc denotes the amount of command line inputs. *argv[] denotes a pointer to an array which contains the various command line inputs. This array will always be of size argc.
 
-### QC.2:
+### QC.2
 
-	A UNIX file descriptor is a number in the file descriptor table that uniquely identifies an open file in the computer's operating system. Every file must have at least 1 file descriptor and this descriptor is a non-negative integer. Intuitively, the file descriptor table contains all the file descriptors on a computer's operating system.
-	[Citation](https://www.computerhope.com/jargon/f/file-descriptor.html)
+A UNIX file descriptor is a number in the file descriptor table that uniquely identifies an open file in the computer's operating system. Every file must have at least 1 file descriptor and this descriptor is a non-negative integer. Intuitively, the file descriptor table contains all the file descriptors on a computer's operating system.
+Citation:[https://www.computerhope.com/jargon/f/file-descriptor.html]
 
 ### QC.3
 
-	A struct is a way to group many variables in one place. These variables can be of different types. Sockaddr_in is a structure which is used to handle internet addresses. The structure is in the form of:
+A struct is a way to group many variables in one place. These variables can be of different types. Sockaddr_in is a structure which is used to handle internet addresses. The structure is in the form of:
 	struct sockaddr_in {
         	short            sin_family;  
         	unsigned short   sin_port;    
