@@ -48,8 +48,8 @@ Citation: https://man7.org/linux/man-pages/man2/socket.2.html
 ### QC.5
 The input parameters for bind() in order are:
 
-int sockfd: The file descriptor referring to the socket
-const struct sockaddr *addr: The address
+int sockfd: The file descriptor referring to the socket\
+const struct sockaddr *addr: The address\
 socklen_t addrlen: size in bytes of the adress structure which addr points to.
 
 Citation: https://man7.org/linux/man-pages/man2/bind.2.html
@@ -63,11 +63,13 @@ Citation: https://man7.org/linux/man-pages/man2/listen.2.html
 
 ### QC.6
 
-We use a while(1) because this allows us to have more than one connection to the server since after one message is sent and received, the socket does not close and it continues waiting for a new socket connection and message. If this while loop isnt there, only 1 message would be able to be sent as the socket will close not after the first.
+We use a while(1) because this allows us to have more than one connection to the server since after one message is sent and received, the socket does not close and it continues waiting for a new socket connection and message. If this while loop isnt there, only 1 message would be able to be sent as the socket will close not after the first.\
 If there are multiple simultaneous connections, the server will wait on the first client message before accepting the other messages. And thus if the first client never sends a message, even if the other clinets sned their message, the message will never be received by the server. Also, there is no way to close the socket since there is no way to exit the while loop, this forces the user to have to use an exit or kill command on the server.
 
 ### QC.7
+
 Fork is used to create new processes called child processes. These child processes can run concurrently with the parent process. This means that as the parent process which in this case would the initial connection to the server, if a new connection is formed with a new client then this would create a child process so that both can communicate with the server at the same time without having to wait for the the initial parent process.
+
 Citation: https://www.geeksforgeeks.org/fork-system-call/
 
 ### Extra Q??
