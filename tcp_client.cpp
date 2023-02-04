@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 		exit(0);
 	}
 	
-	printf("%s", argv[1]);
+	//printf("%s", argv[1]);
 	server = gethostbyname(argv[1]);
     	if (server == NULL) {
         	fprintf(stderr,"ERROR, no such host\n");
