@@ -53,6 +53,7 @@ The input parameters for socket() in order are:
 `int protocol: Specifies protocol value. Internet Protocol is 0.`
 
 The return value for socket() is an int which will return the file descriptor of a socket if successful, otherwise returns -1.
+
 Citation: https://man7.org/linux/man-pages/man2/socket.2.html
 
 ### QC.5
